@@ -10,7 +10,7 @@ This capstone project aims at applying the concepts learnt in the data science i
 
 Each record of the the dataset contains individial and categorical features. The former includes, hash values (sha256 & md5) to idenfity the malware or file used, date when a malware appeared, label, and malware name (avclass). The latter is related to information extracted from the type of file, it has list and dictionary data structures. A illustration of this structure is presented as follows:
 
-![image.png](attachment:image.png)
+![image.png](./img/image1.png)
 
 **Note**: The datasets used for this experiments are not uploaded because their sizes are considerably large.
 
@@ -18,7 +18,7 @@ Each record of the the dataset contains individial and categorical features. The
 
 The preprocessing part started with the vectorization that basically utilise a script from *EMBER's* project. This particular process is performed in the following jupyter notebook: [vectorization](./1.Vectorization.ipynb). This process is shown below:
 
-![image.png](attachment:image.png)
+![image.png](./img/image2.png)
 
 In addition to this, some pleliminar analysis was done in [Exploratory Data Analysis](./2.EDA-Visuals.ipynb). Due to the time limitation and resources, a sample (100K records) from the original dataset was taken so the modeling experiments were pratically computed, details of this is illustrated in [Sample generation](./3.exp-gen-sampl.ipynb).
 
@@ -26,7 +26,7 @@ In addition to this, some pleliminar analysis was done in [Exploratory Data Anal
 
 This project explored three machine learning models, Random Forest Classifier (RFC) , XGBoost, and PCA - Logistic Regression. In the case of RFC, nine experiments were conducted, from where *exp7* seems to be the best model out of them. Image below presents a summary of these experiments, highlighting their important parameters and results. Specific details of *exp7* is elaborated in the following notebook: [Model Selection](./4.exp-model7-rfc.ipynb).
 
-![image.png](attachment:image.png)
+![image.png](./img/image3.png)
 
 In further experiments, the XGBoost and PCA - Logistic Regression models, we can refer to the notebooks ([XGBoost](./6.exp-xgboost-1.ipynb)), and  ([PCA-LogisticRegression](./5.exp-PCA-LogRegression.ipynb)), respectively. These models need certain optimatization to achieve better results.
 
@@ -38,6 +38,6 @@ In terms of the dataset size, different strategies were explored. For instance, 
 
 The results conclude (*exp7*) that *Byte-histogram*, *Byte-entropy histogram*, and *String information* are strong predictor categories, which accounts for more that 70% of the entire features, as illustrated below:
 
-![image.png](attachment:image.png)
+![image.png](./img/image4.png)
 
 This indicates that statistics about the type of file are strong predictors since those predictor categories collect meta-data of a particular file, for example, bytes distribution and randomness.

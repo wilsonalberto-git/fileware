@@ -1,3 +1,4 @@
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 <h1><center>Capstone Report - FileW@re</center></h1>
 <h3><center>(by Wilson Alberto Torres)</center></h3>
 
